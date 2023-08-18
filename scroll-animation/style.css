@@ -1,0 +1,77 @@
+/* bootstrap icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/* resetting */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 0;
+  gap: 2rem;
+  background-color: #bbb;
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* project css */
+.card {
+  width: 25%;
+  min-width: 15rem;
+  min-height: 11rem;
+  background-color: #eeff99;
+  padding: 0.5rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  transform: translateX(-400%);
+  -webkit-transform: translateX(-400%);
+  -moz-transform: translateX(-400%);
+  -ms-transform: translateX(-400%);
+  -o-transform: translateX(-400%);
+  transition: 1s transform ease-in-out;
+  -webkit-transition: 1s transform ease-in-out;
+  -moz-transition: 1s transform ease-in-out;
+  -ms-transition: 1s transform ease-in-out;
+  -o-transition: 1s transform ease-in-out;
+}
+
+.card.show {
+  transform: translate(0);
+  -webkit-transform: translate(0);
+  -moz-transform: translate(0);
+  -ms-transform: translate(0);
+  -o-transform: translate(0);
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.content {
+  padding: 0.9rem 0;
+  font-size: 0.9rem;
+}
