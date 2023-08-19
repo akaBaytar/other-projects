@@ -1,0 +1,158 @@
+/* bootstrap icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/* resetting */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #bbb;
+  overflow: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* project css */
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.split {
+  position: absolute;
+  width: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split.left {
+  background-image: url("./img/barbie.jpg");
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.split.right {
+  background-image: url("./img/oppenheimer.jpg");
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.split.left::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+}
+
+.split.right::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  font-size: 4.5rem;
+  color: #fff;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+}
+
+.button {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%);
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: #fff;
+  padding: 1.5rem 3rem;
+  border: 0.25rem solid #fff;
+  background-color: #00000050;
+  transition: 0.3s background-color, 0.3s border;
+  -webkit-transition: 0.3s background-color, 0.3s border;
+  -moz-transition: 0.3s background-color, 0.3s border;
+  -ms-transition: 0.3s background-color, 0.3s border;
+  -o-transition: 0.3s background-color, 0.3s border;
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+}
+
+.split.left .button:hover {
+  background-color: #ee71c3;
+  border: 0.25rem solid #ee71c3;
+}
+
+.split.right .button:hover {
+  background-color: #400a06;
+  border: 0.25rem solid #400a06;
+}
+
+.hover-left .left {
+  width: 75%;
+}
+
+.hover-left .right {
+  width: 25%;
+}
+
+.hover-right .right {
+  width: 75%;
+}
+
+.hover-right .left {
+  width: 25%;
+}
+
+.hover-left .split.left::before {
+  background-color: transparent;
+}
+.hover-right .split.right::before {
+  background-color: transparent;
+}
+
+.left,
+.right {
+  transition: 1s width ease-in-out;
+  -webkit-transition: 1s width ease-in-out;
+  -moz-transition: 1s width ease-in-out;
+  -ms-transition: 1s width ease-in-out;
+  -o-transition: 1s width ease-in-out;
+}
