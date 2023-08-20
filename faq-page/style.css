@@ -1,0 +1,131 @@
+/* bootstrap icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/* resetting */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #FAF0E6;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* project css */
+.container {
+  margin: 0 auto;
+  width: 50%;
+  min-width: 20rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 3.5rem;
+  color: #352F44;
+  padding-bottom: 1rem;
+  border-bottom: 5px solid #352F44;
+}
+
+.faq{
+  position: relative;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  color: #000;
+  height: auto;
+  background-color: #B9B4C7;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  transition:0.3s height linear;
+  -webkit-transition:0.3s height linear;
+  -moz-transition:0.3s height linear;
+  -ms-transition:0.3s height linear;
+  -o-transition:0.3s height linear;
+}
+
+.faq-title{
+  font-size: 1.5rem;
+  padding: 1rem 0rem;
+  padding-right: 2rem;
+}
+
+.faq.active .answer{
+  display: flex;
+}
+
+.answer{
+  display: none;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+button{
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  background-color: transparent;
+}
+
+.bi-x-lg{
+  display: none;
+}
+
+.faq.active .bi-chevron-down{
+  display: none;
+}
+
+.faq.active .bi-x-lg{
+  display: flex;
+}
+
+@media screen and (max-width:768px) {
+  .container {
+    width: 80%;
+  }
+
+  .faq-title{
+    padding: 0.5rem 0rem;
+    padding-right: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .answer{
+    display: none;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+  }
+
+  button{
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1.2rem;
+  }
+}
