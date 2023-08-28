@@ -1,0 +1,65 @@
+/* bootstrap icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/* resetting */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  height: 100vh;
+  color: #d5d5d5;
+  background-color: #1e2126;
+}
+
+/* project css */
+.bi-heart-fill {
+  color: #f12f6c;
+}
+
+.img {
+  --width: 20rem;
+  width: var(--width);
+  height: calc(var(--width) * 13 / 9);
+  position: relative;
+  cursor: pointer;
+  background-image: url("./img/cat.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img .bi-heart-fill {
+  position: absolute;
+  scale: 0;
+  animation: grow 1s linear;
+  -webkit-animation: grow 1s linear;
+}
+
+@keyframes grow {
+  25% {
+    scale: 2;
+  }
+  50% {
+    scale: 5;
+    opacity: 1;
+  }
+  100% {
+    left: 50%;
+    top: -10rem;
+    scale: 10;
+    opacity: 0;
+  }
+}
