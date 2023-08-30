@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Password Validation</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="logo"><i class="bi bi-fingerprint"></i></h1>
+      <div class="desc-container">
+        <h2 class="title">Reset your password</h2>
+        <p class="description">Enter a new a password for your account.</p>
+      </div>
+      <form class="password-form">
+        <div class="password">
+          <label for="password1">Enter your password</label>
+          <input type="password" name="password1" id="password1"/>
+          <button class="show" id="show1"><i class="bi bi-eye"></i></button>
+        </div>
+        <div class="password">
+          <label for="password2">Confirm your password</label>
+          <input type="password" name="password2" id="password2" />
+          <button class="show" id="show2"><i class="bi bi-eye"></i></button>
+        </div>
+        <div class="requirements">
+          <span class="req-description">New password must contain:</span>
+          <ul class="req-list">
+            <li class="list-item list-item1">
+              <i class="bi bi-check"></i> At least 12 characters
+            </li>
+            <li class="list-item list-item2">
+              <i class="bi bi-check"></i> At least 1 lowercase character
+            </li>
+            <li class="list-item list-item3">
+              <i class="bi bi-check"></i> At least 1 uppercase character
+            </li>
+            <li class="list-item list-item4">
+              <i class="bi bi-check"></i> At least 1 number
+            </li>
+            <li class="list-item list-item5">
+              <i class="bi bi-check"></i> At least 1 special character
+            </li>
+          </ul>
+        </div>
+        <button class="update">Update Password</button>
+      </form>
+      <span class="login">
+        Remember your old password?
+        <a href="#">Sign in</a>
+      </span>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
