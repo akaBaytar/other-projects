@@ -1,0 +1,116 @@
+/* bootstrap icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/* resetting */
+:root {
+  --background: #ffdbc3;
+  --light: #9f91cc;
+  --dark: #5c4b99;
+  --darker: #3d246c;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--background);
+}
+
+li {
+  list-style: none;
+}
+
+/* project css */
+.container {
+  position: relative;
+  background-color: #fff;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow: hidden;
+  border: 0.15rem solid var(--dark);
+  background-color: var(--light);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.title-container {
+  position: absolute;
+  width: 100%;
+  height: 4rem;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: var(--dark);
+}
+
+.title {
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+
+.quiz-header {
+  margin-top: 4rem;
+}
+
+.question {
+  font-size: 1.2rem;
+}
+
+.quiz-body {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.answer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+button {
+  color: #fff;
+  background-color: var(--dark);
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+button:active {
+  scale: 0.98;
+}
+
+input,
+label {
+  cursor: pointer;
+}
+
+input {
+  accent-color: var(--dark);
+}
